@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="container mx-auto p-5">
+
+        <h3 class="book ms-3">Bookmarker</h3>
+        <div class="brdr mt-5"></div>
+        <div class="site container text-center p-4 mt-3">
+            <h4 class="mt-5">Bookmark your favorite sites </h4>
+            <label class="mt-3" for="siteName">Site Name </label>
+            <input type="text" id="siteName" class="form-control w-75 mx-auto mt-3" placeholder="BookMark Name" />
+            <div id="alert" class=" mt-2 alert-danger mx-auto d-none w-50 text-center"> Site name is required</div>
+
+            <label class="mt-3" for="siteurl">Site URl </label>
+            <input type="email" id="siteUrl" class="form-control w-75 mx-auto mt-3" placeholder="Website URL" />
+            <div id="alert2" class="mt-2 alert-danger d-none mx-auto w-50 text-center"> Site Url is required</div>
+
+            <button type="submit" onclick="addsite()" class="btn btn-primary mt-5">Submit</button>
+
+        </div>
+        <div id="siteData" class="site container mx-auto ">
+
+        </div>
+
+
+
+        <div class="brdr mt-3"></div>
+
+        <p class="text-muted mt-3"> © 2019 Bookmarker Inc. </p>
+    </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
